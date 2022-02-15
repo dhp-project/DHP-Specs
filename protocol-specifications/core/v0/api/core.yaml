@@ -1789,7 +1789,7 @@ components:
         agent:
           $ref: '#/components/schemas/Agent'
         contact:
-          $ref: '#/components/schemas/Contcat'
+          $ref: '#/components/schemas/Contact'
         start:
           description: Details on the start of fulfillment
           type: object
