@@ -927,7 +927,10 @@ paths:
                         uri: payto://ban/98273982749428?amount=INR:110&ifsc=SBIN0000575&message=hello
                         type: ON-ORDER
                         status: PENDING
-                  
+                      data:
+                        uri: uhi://consent/98273982749428?phr=test@abdm&code=PATRQT&hi=OPC&subscr=true&id=12231
+                        type: ON-ORDER
+                        status: PENDING
 
       responses:
         '200':
@@ -1458,6 +1461,10 @@ paths:
                         uri: payto://ban/98273982749428?amount=INR:110&ifsc=SBIN0000575&message=hello
                         type: ON-ORDER
                         status: PAID
+                      data:
+                        uri: uhi://view/98273982749428?phr=test@abdm&fulfillmentId=332214&hiType=OPConsultation
+                        type: ON-ORDER
+                        status: UPLOADED-TO-PHR
       responses:
         '200':
           description: Acknowledgement of message received
