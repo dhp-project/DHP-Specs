@@ -1,8 +1,8 @@
 openapi: 3.0.0
 info:
   title: DHP Core API
-  description: DHP Core API specification. This is an adaptation of Beckn core version 0.9.3
-  version: 0.7.1
+  description: DHP Core API specification. This is an extension of Beckn core version 0.9.3-draft, commit - d4abe91e164d032ce5dd01e2ad7c0842166e88f8
+  version: 0.7.1-draft
 
 paths:
   /search:
@@ -1783,12 +1783,12 @@ components:
               $ref: '#/components/schemas/Person'
             contact:
               $ref: '#/components/schemas/Contact'
-        person:
+        agent:
           $ref: '#/components/schemas/Agent'
         person:
           $ref: '#/components/schemas/Person'
         contact:
-          $ref: '#/components/schemas/Contcat'
+          $ref: '#/components/schemas/Contact'
         start:
           description: Details on the start of fulfillment
           type: object
@@ -2012,7 +2012,7 @@ components:
             - currency
         type:
           type: string
-          descriptor: Stage at which the payment is expected
+          description: Stage at which the payment is expected
           enum:
             - ON-ORDER
             - PRE-FULFILLMENT
@@ -2274,3 +2274,4 @@ components:
           description: comma separated values representing days of the week
         schedule:
           $ref: '#/components/schemas/Schedule'
+          
