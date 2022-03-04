@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
   title: DHP Core API
-  description: DHP Core API specification. This is an extension of Beckn core version 0.9.3-draft, commit - d4abe91e164d032ce5dd01e2ad7c0842166e88f8
+  description: DHP Core API specification. This is an extension of Beckn core version 0.9.3-draft
   version: 0.7.1-draft
 
 paths:
