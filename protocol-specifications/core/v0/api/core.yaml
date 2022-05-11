@@ -927,6 +927,10 @@ paths:
                         uri: payto://ban/98273982749428?amount=INR:110&ifsc=SBIN0000575&message=hello
                         type: ON-ORDER
                         status: PENDING
+                      data:
+                        uhi: uhi://consent?phr=test@abdm&code=PATRQT
+                        type: ON-ORDER
+                        status: PENDING
                   
 
       responses:
