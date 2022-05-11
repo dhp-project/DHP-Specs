@@ -19,12 +19,12 @@ paths:
               type: object
               properties:
                 context:
-                  $ref: '#/components/schemas/Context'
+                  $ref: "#/components/schemas/Context"
                 message:
                   type: object
                   properties:
                     intent:
-                      $ref: '#/components/schemas/Intent'
+                      $ref: "#/components/schemas/Intent"
               required:
                 - context
                 - message
@@ -38,13 +38,13 @@ paths:
                     action: search
                     core_version: 0.7.1
                     message_id: 85a422c4-2867-4d72-b5f5-d31588e2f7c5
-                    timestamp: '2021-03-23T10:00:40.065Z'
+                    timestamp: "2021-03-23T10:00:40.065Z"
                   message:
                     intent:
                       item:
                         descriptor:
                           name: MRI Scan
-                          
+
               Get details of a specific healthcare service:
                 value:
                   context:
@@ -54,12 +54,12 @@ paths:
                     action: search
                     core_version: 0.7.1
                     message_id: 85a422c4-2867-4d72-b5f5-d31588e2f7c5
-                    timestamp: '2021-03-23T10:00:40.065Z'
+                    timestamp: "2021-03-23T10:00:40.065Z"
                   message:
                     intent:
                       item:
                         id: 289edce4-d002-4962-b311-4c025e22b4f6
-                        
+
               Search by healthcare service provider name:
                 value:
                   context:
@@ -69,13 +69,13 @@ paths:
                     action: search
                     core_version: 0.7.1
                     message_id: 85a422c4-2867-4d72-b5f5-d31588e2f7c5
-                    timestamp: '2021-03-23T10:00:40.065Z'
+                    timestamp: "2021-03-23T10:00:40.065Z"
                   message:
                     intent:
                       provider:
                         descriptor:
                           name: MAX Hospitals
-                          
+
               Get services of a specific healthcare service provider:
                 value:
                   context:
@@ -85,12 +85,12 @@ paths:
                     action: search
                     core_version: 0.7.1
                     message_id: 85a422c4-2867-4d72-b5f5-d31588e2f7c5
-                    timestamp: '2021-03-23T10:00:40.065Z'
+                    timestamp: "2021-03-23T10:00:40.065Z"
                   message:
                     intent:
                       provider:
                         id: 675eecec-2da8-41e1-9303-3aeac992bb7e
-                        
+
               Search by healthcare services category name:
                 value:
                   context:
@@ -100,7 +100,7 @@ paths:
                     action: search
                     core_version: 0.7.1
                     message_id: 85a422c4-2867-4d72-b5f5-d31588e2f7c5
-                    timestamp: '2021-03-23T10:00:40.065Z'
+                    timestamp: "2021-03-23T10:00:40.065Z"
                   message:
                     intent:
                       category:
@@ -110,7 +110,7 @@ paths:
                         person:
                           descriptor:
                             name: Dr Asthana
-                            
+
               Get all healthcare services under a category:
                 value:
                   context:
@@ -120,12 +120,12 @@ paths:
                     action: search
                     core_version: 0.7.1
                     message_id: 85a422c4-2867-4d72-b5f5-d31588e2f7c5
-                    timestamp: '2021-03-23T10:00:40.065Z'
+                    timestamp: "2021-03-23T10:00:40.065Z"
                   message:
                     intent:
                       category:
                         id: c63a05de-242f-4314-a748-323f71a1d3b1
-                        
+
               Search by Healthcare Professional Name:
                 value:
                   context:
@@ -135,14 +135,14 @@ paths:
                     action: search
                     core_version: 0.7.1
                     message_id: 85a422c4-2867-4d72-b5f5-d31588e2f7c5
-                    timestamp: '2021-03-23T10:00:40.065Z'
+                    timestamp: "2021-03-23T10:00:40.065Z"
                   message:
                     intent:
                       fulfillment:
                         person:
                           descriptor:
                             name: Dr Asthana
-                            
+
               Search by Healthcare professional ID:
                 value:
                   context:
@@ -152,13 +152,13 @@ paths:
                     action: search
                     core_version: 0.7.1
                     message_id: 85a422c4-2867-4d72-b5f5-d31588e2f7c5
-                    timestamp: '2021-03-23T10:00:40.065Z'
+                    timestamp: "2021-03-23T10:00:40.065Z"
                   message:
                     intent:
                       fulfillment:
                         person:
                           cred: uhiId:98479873843985
-                          
+
               Search by Healthcare Fulfillment Service timings:
                 value:
                   context:
@@ -168,7 +168,7 @@ paths:
                     action: search
                     core_version: 0.7.1
                     message_id: 85a422c4-2867-4d72-b5f5-d31588e2f7c5
-                    timestamp: '2021-03-23T10:00:40.065Z'
+                    timestamp: "2021-03-23T10:00:40.065Z"
                   message:
                     intent:
                       fulfillment:
@@ -178,7 +178,7 @@ paths:
                         end:
                           time:
                             timestamp: 2021-03-23T11:00.000Z
-                            
+
               Search for teleconsultation services by symptom:
                 value:
                   context:
@@ -188,7 +188,7 @@ paths:
                     action: search
                     core_version: 0.7.1
                     message_id: 85a422c4-2867-4d72-b5f5-d31588e2f7c5
-                    timestamp: '2021-03-23T10:00:40.065Z'
+                    timestamp: "2021-03-23T10:00:40.065Z"
                   message:
                     intent:
                       category:
@@ -197,7 +197,7 @@ paths:
                       tags:
                         symptoms: cough,fever
                         temperature": 101 C
-                        
+
               Search for a cardiologist with 5+ years of experience and who can speak Kannada:
                 value:
                   context:
@@ -207,7 +207,7 @@ paths:
                     action: search
                     core_version: 0.7.1
                     message_id: 85a422c4-2867-4d72-b5f5-d31588e2f7c5
-                    timestamp: '2021-03-23T10:00:40.065Z'
+                    timestamp: "2021-03-23T10:00:40.065Z"
                   message:
                     intent:
                       category:
@@ -218,7 +218,7 @@ paths:
                           tags:
                             exp: gt 5Y
                             lang: kan
-                            
+
               Search for a female doctor in Bangalore who speaks Hindi and is from Internal Medicine department:
                 value:
                   context:
@@ -228,7 +228,7 @@ paths:
                     action: search
                     core_version: 0.7.1
                     message_id: 85a422c4-2867-4d72-b5f5-d31588e2f7c5
-                    timestamp: '2021-03-23T10:00:40.065Z'
+                    timestamp: "2021-03-23T10:00:40.065Z"
                   message:
                     intent:
                       fulfillment:
@@ -239,9 +239,9 @@ paths:
                       category:
                         descriptor:
                           code: INTERNAL_MEDICINE
-                  
+
       responses:
-        '200':
+        "200":
           description: Acknowledgement of message received
           content:
             application/json:
@@ -252,11 +252,11 @@ paths:
                     type: object
                     properties:
                       ack:
-                        $ref: '#/components/schemas/Ack'
+                        $ref: "#/components/schemas/Ack"
                     required:
                       - ack
                   error:
-                    $ref: '#/components/schemas/Error'
+                    $ref: "#/components/schemas/Error"
                 required:
                   - message
   /select:
@@ -272,7 +272,7 @@ paths:
               type: object
               properties:
                 context:
-                  $ref: '#/components/schemas/Context'
+                  $ref: "#/components/schemas/Context"
                 message:
                   type: object
                   properties:
@@ -283,18 +283,18 @@ paths:
                           type: object
                           properties:
                             id:
-                              $ref: '#/components/schemas/Provider/properties/id'
+                              $ref: "#/components/schemas/Provider/properties/id"
                         items:
                           type: array
                           items:
                             type: object
                             properties:
                               id:
-                                $ref: '#/components/schemas/Item/properties/id'
+                                $ref: "#/components/schemas/Item/properties/id"
                               quantity:
-                                $ref: '#/components/schemas/ItemQuantity/properties/selected'
+                                $ref: "#/components/schemas/ItemQuantity/properties/selected"
                               fulfillment_id:
-                                $ref: '#/components/schemas/Fulfillment/properties/id'
+                                $ref: "#/components/schemas/Fulfillment/properties/id"
                             required:
                               - id
                   required:
@@ -312,17 +312,17 @@ paths:
                     action: select
                     core_version: 0.7.1
                     message_id: 85a422c4-2867-4d72-b5f5-d31588e2f7c5
-                    timestamp: '2021-03-23T10:00:40.065Z'
+                    timestamp: "2021-03-23T10:00:40.065Z"
                   message:
                     order:
                       provider:
-                        id: '1'
+                        id: "1"
                       items:
-                        - id: '1'
-                          fulfillment_id: '2'
+                        - id: "1"
+                          fulfillment_id: "2"
 
       responses:
-        '200':
+        "200":
           description: Acknowledgement of message received
           content:
             application/json:
@@ -333,11 +333,11 @@ paths:
                     type: object
                     properties:
                       ack:
-                        $ref: '#/components/schemas/Ack'
+                        $ref: "#/components/schemas/Ack"
                     required:
                       - ack
                   error:
-                    $ref: '#/components/schemas/Error'
+                    $ref: "#/components/schemas/Error"
                 required:
                   - message
   /init:
@@ -353,7 +353,7 @@ paths:
               type: object
               properties:
                 context:
-                  $ref: '#/components/schemas/Context'
+                  $ref: "#/components/schemas/Context"
                 message:
                   type: object
                   properties:
@@ -364,26 +364,26 @@ paths:
                           type: object
                           properties:
                             id:
-                              $ref: '#/components/schemas/Provider/properties/id'
+                              $ref: "#/components/schemas/Provider/properties/id"
                         items:
                           type: array
                           items:
                             type: object
                             properties:
                               id:
-                                $ref: '#/components/schemas/Item/properties/id'
+                                $ref: "#/components/schemas/Item/properties/id"
                               quantity:
-                                $ref: '#/components/schemas/ItemQuantity/properties/selected'
+                                $ref: "#/components/schemas/ItemQuantity/properties/selected"
                               fulfillment_id:
-                                $ref: '#/components/schemas/Fulfillment/properties/id'
+                                $ref: "#/components/schemas/Fulfillment/properties/id"
                             required:
                               - id
                         billing:
-                          $ref: '#/components/schemas/Billing'
+                          $ref: "#/components/schemas/Billing"
                         fulfillment:
-                          $ref: '#/components/schemas/Fulfillment'
+                          $ref: "#/components/schemas/Fulfillment"
                         quote:
-                          $ref: '#/components/schemas/Quotation'  
+                          $ref: "#/components/schemas/Quotation"
                   required:
                     - order
               required:
@@ -399,21 +399,21 @@ paths:
                     action: init
                     core_version: 0.7.1
                     message_id: 85a422c4-2867-4d72-b5f5-d31588e2f7c5
-                    timestamp: '2021-03-23T10:00:40.065Z'
+                    timestamp: "2021-03-23T10:00:40.065Z"
                   message:
                     order:
                       provider:
-                        id: '1'
+                        id: "1"
                       items:
-                        - id: '1'
-                          fulfillment_id: '2'
+                        - id: "1"
+                          fulfillment_id: "2"
                       billing:
                         name: John Doe
                         address:
-                          door: '12'
+                          door: "12"
                           building: Salarpuria Greenage
                           street: No 7, Hosur Road
-                          area_code: '560068'
+                          area_code: "560068"
                         email: john.doe@example.com
                         phone: +91-9999999999
                       fulfillment:
@@ -422,7 +422,7 @@ paths:
                           cred: example@ndhm
 
       responses:
-        '200':
+        "200":
           description: Acknowledgement of message received
           content:
             application/json:
@@ -433,11 +433,11 @@ paths:
                     type: object
                     properties:
                       ack:
-                        $ref: '#/components/schemas/Ack'
+                        $ref: "#/components/schemas/Ack"
                     required:
                       - ack
                   error:
-                    $ref: '#/components/schemas/Error'
+                    $ref: "#/components/schemas/Error"
                 required:
                   - message
   /confirm:
@@ -453,7 +453,7 @@ paths:
               type: object
               properties:
                 context:
-                  $ref: '#/components/schemas/Context'
+                  $ref: "#/components/schemas/Context"
                 message:
                   type: object
                   properties:
@@ -464,33 +464,33 @@ paths:
                           type: object
                           properties:
                             id:
-                              $ref: '#/components/schemas/Provider/properties/id'
+                              $ref: "#/components/schemas/Provider/properties/id"
                         state:
-                          $ref: '#/components/schemas/State'  
+                          $ref: "#/components/schemas/State"
                         items:
                           type: array
                           items:
                             type: object
                             properties:
                               id:
-                                $ref: '#/components/schemas/Item/properties/id'
+                                $ref: "#/components/schemas/Item/properties/id"
                               quantity:
-                                $ref: '#/components/schemas/ItemQuantity/properties/selected'
+                                $ref: "#/components/schemas/ItemQuantity/properties/selected"
                               fulfillment_id:
-                                $ref: '#/components/schemas/Fulfillment/properties/id'
+                                $ref: "#/components/schemas/Fulfillment/properties/id"
                             required:
                               - id
                         billing:
-                          $ref: '#/components/schemas/Billing'
+                          $ref: "#/components/schemas/Billing"
                         fulfillment:
-                          $ref: '#/components/schemas/Fulfillment'
+                          $ref: "#/components/schemas/Fulfillment"
                   required:
                     - order
               required:
                 - context
                 - message
       responses:
-        '200':
+        "200":
           description: Acknowledgement of message received
           content:
             application/json:
@@ -501,11 +501,11 @@ paths:
                     type: object
                     properties:
                       ack:
-                        $ref: '#/components/schemas/Ack'
+                        $ref: "#/components/schemas/Ack"
                     required:
                       - ack
                   error:
-                    $ref: '#/components/schemas/Error'
+                    $ref: "#/components/schemas/Error"
                 required:
                   - message
   /status:
@@ -521,19 +521,19 @@ paths:
               type: object
               properties:
                 context:
-                  $ref: '#/components/schemas/Context'
+                  $ref: "#/components/schemas/Context"
                 message:
                   type: object
                   properties:
                     order_id:
-                      $ref: '#/components/schemas/Order/properties/id'
+                      $ref: "#/components/schemas/Order/properties/id"
                   required:
                     - order_id
               required:
                 - context
                 - message
       responses:
-        '200':
+        "200":
           description: Acknowledgement of message received
           content:
             application/json:
@@ -544,11 +544,11 @@ paths:
                     type: object
                     properties:
                       ack:
-                        $ref: '#/components/schemas/Ack'
+                        $ref: "#/components/schemas/Ack"
                     required:
                       - ack
                   error:
-                    $ref: '#/components/schemas/Error'
+                    $ref: "#/components/schemas/Error"
                 required:
                   - message
 
@@ -566,16 +566,16 @@ paths:
               type: object
               properties:
                 context:
-                  $ref: '#/components/schemas/Context'
+                  $ref: "#/components/schemas/Context"
                 message:
                   type: object
                   properties:
                     catalog:
-                      $ref: '#/components/schemas/Catalog'
+                      $ref: "#/components/schemas/Catalog"
                   required:
                     - catalog
                 error:
-                  $ref: '#/components/schemas/Error'
+                  $ref: "#/components/schemas/Error"
               required:
                 - context
             examples:
@@ -588,7 +588,7 @@ paths:
                     action: on_search
                     core_version: 0.7.1
                     message_id: 85a422c4-2867-4d72-b5f5-d31588e2f7c5
-                    timestamp: '2021-03-23T10:00:40.065Z'
+                    timestamp: "2021-03-23T10:00:40.065Z"
                   message:
                     catalog:
                       descriptor:
@@ -598,20 +598,20 @@ paths:
                           descriptor:
                             name: MAX Hospitals
                           categories:
-                            - id: '1'
+                            - id: "1"
                               descriptor:
                                 name: OPD
-                            - id: '2'
+                            - id: "2"
                               descriptor:
                                 name: Diagnostics
-                            - id: '3'
+                            - id: "3"
                               descriptor:
                                 name: Emergency
                           fulfillments:
-                            - id: '1'
+                            - id: "1"
                               type: DIGITAL-OPD
                               person:
-                                id: '1'
+                                id: "1"
                                 name: Dr Asthana
                                 gender: male
                                 image: https://image/of/person.png
@@ -622,10 +622,10 @@ paths:
                               end:
                                 time:
                                   timestamp: T10:15Z
-                            - id: '2'
+                            - id: "2"
                               type: DIGITAL-OPD
                               person:
-                                id: '1'
+                                id: "1"
                                 name: Dr Asthana
                                 gender: male
                                 image: https://image/of/person.png
@@ -636,10 +636,10 @@ paths:
                               end:
                                 time:
                                   timestamp: T10:30Z
-                            - id: '3'
+                            - id: "3"
                               type: DIGITAL-OPD
                               person:
-                                id: '1'
+                                id: "1"
                                 name: Dr Bhargava
                                 gender: female
                                 image: https://image/of/person.png
@@ -650,10 +650,10 @@ paths:
                               end:
                                 time:
                                   timestamp: T10:15Z
-                            - id: '4'
+                            - id: "4"
                               type: DIGITAL-OPD
                               person:
-                                id: '1'
+                                id: "1"
                                 name: Dr Bhargava
                                 gender: female
                                 image: https://image/of/person.png
@@ -665,29 +665,29 @@ paths:
                                 time:
                                   timestamp: T10:30Z
                           items:
-                            - id: '1'
+                            - id: "1"
                               descriptor:
                                 name: Consultation
-                              category_id: '1'
-                              fulfillment_id: '1'
-                            - id: '1'
+                              category_id: "1"
+                              fulfillment_id: "1"
+                            - id: "1"
                               descriptor:
                                 name: Consultation
-                              category_id: '1'
-                              fulfillment_id: '2'
-                            - id: '1'
+                              category_id: "1"
+                              fulfillment_id: "2"
+                            - id: "1"
                               descriptor:
                                 name: Consultation
-                              category_id: '1'
-                              fulfillment_id: '3'
-                            - id: '1'
+                              category_id: "1"
+                              fulfillment_id: "3"
+                            - id: "1"
                               descriptor:
                                 name: Consultation
-                              category_id: '1'
-                              fulfillment_id: '4'
-                  
+                              category_id: "1"
+                              fulfillment_id: "4"
+
       responses:
-        '200':
+        "200":
           description: Acknowledgement of message received
           content:
             application/json:
@@ -698,11 +698,11 @@ paths:
                     type: object
                     properties:
                       ack:
-                        $ref: '#/components/schemas/Ack'
+                        $ref: "#/components/schemas/Ack"
                     required:
                       - ack
                   error:
-                    $ref: '#/components/schemas/Error'
+                    $ref: "#/components/schemas/Error"
                 required:
                   - context
   /on_select:
@@ -718,7 +718,7 @@ paths:
               type: object
               properties:
                 context:
-                  $ref: '#/components/schemas/Context'
+                  $ref: "#/components/schemas/Context"
                 message:
                   type: object
                   properties:
@@ -726,26 +726,26 @@ paths:
                       type: object
                       properties:
                         provider:
-                          $ref: '#/components/schemas/Provider'
+                          $ref: "#/components/schemas/Provider"
                         items:
                           type: array
                           items:
                             type: object
                             properties:
                               id:
-                                $ref: '#/components/schemas/Item/properties/id'
+                                $ref: "#/components/schemas/Item/properties/id"
                               quantity:
-                                $ref: '#/components/schemas/ItemQuantity/properties/selected'
+                                $ref: "#/components/schemas/ItemQuantity/properties/selected"
                               fulfillment_id:
-                                $ref: '#/components/schemas/Fulfillment/properties/id'
+                                $ref: "#/components/schemas/Fulfillment/properties/id"
                             required:
                               - id
                         quote:
-                          $ref: '#/components/schemas/Quotation'
+                          $ref: "#/components/schemas/Quotation"
                   required:
                     - order
                 error:
-                  $ref: '#/components/schemas/Error'
+                  $ref: "#/components/schemas/Error"
               required:
                 - context
             examples:
@@ -758,24 +758,24 @@ paths:
                     action: select
                     core_version: 0.7.1
                     message_id: 85a422c4-2867-4d72-b5f5-d31588e2f7c5
-                    timestamp: '2021-03-23T10:00:40.065Z'
+                    timestamp: "2021-03-23T10:00:40.065Z"
                   message:
                     order:
                       provider:
-                        id: '1'
+                        id: "1"
                         descriptor:
                           name: MAX Hospitals
                       items:
-                        - id: '1'
+                        - id: "1"
                           descriptor:
                             name: Consultation
-                          fulfillment_id: '2'
-                          provider_id: '1'
+                          fulfillment_id: "2"
+                          provider_id: "1"
                       fulfillment:
-                        id: '2'
+                        id: "2"
                         type: DIGITAL-OPD
                         person:
-                          id: '1'
+                          id: "1"
                           name: Dr Asthana
                           gender: male
                           image: https://image/of/doctor.png
@@ -787,14 +787,14 @@ paths:
                       quote:
                         price:
                           currency: INR
-                          value: '110'
+                          value: "110"
                           breakup:
-                            - consultation: '100'
-                            - cgst: '5'
-                            - sgst: '5'
-                    
+                            - consultation: "100"
+                            - cgst: "5"
+                            - sgst: "5"
+
       responses:
-        '200':
+        "200":
           description: Acknowledgement of message received
           content:
             application/json:
@@ -805,11 +805,11 @@ paths:
                     type: object
                     properties:
                       ack:
-                        $ref: '#/components/schemas/Ack'
+                        $ref: "#/components/schemas/Ack"
                     required:
                       - ack
                   error:
-                    $ref: '#/components/schemas/Error'
+                    $ref: "#/components/schemas/Error"
                 required:
                   - message
   /on_init:
@@ -825,7 +825,7 @@ paths:
               type: object
               properties:
                 context:
-                  $ref: '#/components/schemas/Context'
+                  $ref: "#/components/schemas/Context"
                 message:
                   type: object
                   properties:
@@ -833,35 +833,35 @@ paths:
                       type: object
                       properties:
                         id:
-                          $ref: '#/components/schemas/Order/properties/id'
+                          $ref: "#/components/schemas/Order/properties/id"
                         provider:
                           type: object
                           properties:
                             id:
-                              $ref: '#/components/schemas/Provider/properties/id'
+                              $ref: "#/components/schemas/Provider/properties/id"
                         state:
-                          $ref: '#/components/schemas/State'  
+                          $ref: "#/components/schemas/State"
                         items:
                           type: array
                           items:
                             type: object
                             properties:
                               id:
-                                $ref: '#/components/schemas/Item/properties/id'
+                                $ref: "#/components/schemas/Item/properties/id"
                               quantity:
-                                $ref: '#/components/schemas/ItemQuantity/properties/selected'
+                                $ref: "#/components/schemas/ItemQuantity/properties/selected"
                         billing:
-                          $ref: '#/components/schemas/Billing'
+                          $ref: "#/components/schemas/Billing"
                         fulfillment:
-                          $ref: '#/components/schemas/Fulfillment'
+                          $ref: "#/components/schemas/Fulfillment"
                         quote:
-                          $ref: '#/components/schemas/Quotation'
+                          $ref: "#/components/schemas/Quotation"
                         payment:
-                          $ref: '#/components/schemas/Payment'
+                          $ref: "#/components/schemas/Payment"
                   required:
                     - order
                 error:
-                  $ref: '#/components/schemas/Error'
+                  $ref: "#/components/schemas/Error"
               required:
                 - context
             examples:
@@ -874,35 +874,35 @@ paths:
                     action: on_init
                     core_version: 0.7.1
                     message_id: 85a422c4-2867-4d72-b5f5-d31588e2f7c5
-                    timestamp: '2021-03-23T10:00:40.065Z'
+                    timestamp: "2021-03-23T10:00:40.065Z"
                   message:
                     order:
-                      id: '26492'
-                      state : "PROVISIONALLY_BOOKED"
+                      id: "26492"
+                      state: "PROVISIONALLY_BOOKED"
                       provider:
-                        id: '1'
+                        id: "1"
                         descriptor:
                           name: MAX Hospitals
                       items:
-                        - id: '1'
+                        - id: "1"
                           descriptor:
                             name: Consultation
-                          fulfillment_id: '2'
-                          provider_id: '1'
+                          fulfillment_id: "2"
+                          provider_id: "1"
                       billing:
                         name: John Doe
                         address:
-                          door: '12'
+                          door: "12"
                           building: Salarpuria Greenage
                           street: No 7, Hosur Road
-                          area_code: '560068'
+                          area_code: "560068"
                         email: john.doe@example.com
                         phone: +91-9999999999
                       fulfillment:
-                        id: '2'
+                        id: "2"
                         type: DIGITAL-OPD
                         person:
-                          id: '1'
+                          id: "1"
                           name: Dr Asthana
                           gender: male
                           image: https://image/of/person.png
@@ -917,23 +917,23 @@ paths:
                       quote:
                         price:
                           currency: INR
-                          value: '120'
+                          value: "120"
                           breakup:
-                            - consultation: '100'
-                            - phr_handling_fees: '10'
-                            - cgst: '5'
-                            - sgst: '5'
+                            - consultation: "100"
+                            - phr_handling_fees: "10"
+                            - cgst: "5"
+                            - sgst: "5"
                       payment:
                         uri: payto://ban/98273982749428?amount=INR:110&ifsc=SBIN0000575&message=hello
                         type: ON-ORDER
                         status: PENDING
                       data:
-                        uri: phr://consent/98273982749428?phr=test@abdm&code=PATRQT&hi=OPC&subscr=true&id=12231
+                        uri: uhi://consent/98273982749428?phr=test@abdm&code=PATRQT&hi=OPC&subscr=true&id=12231
                         type: ON-ORDER
                         status: PENDING
 
       responses:
-        '200':
+        "200":
           description: Acknowledgement of message received
           content:
             application/json:
@@ -944,11 +944,11 @@ paths:
                     type: object
                     properties:
                       ack:
-                        $ref: '#/components/schemas/Ack'
+                        $ref: "#/components/schemas/Ack"
                     required:
                       - ack
                   error:
-                    $ref: '#/components/schemas/Error'
+                    $ref: "#/components/schemas/Error"
                 required:
                   - message
   /on_confirm:
@@ -964,7 +964,7 @@ paths:
               type: object
               properties:
                 context:
-                  $ref: '#/components/schemas/Context'
+                  $ref: "#/components/schemas/Context"
                 message:
                   type: object
                   properties:
@@ -972,36 +972,36 @@ paths:
                       type: object
                       properties:
                         id:
-                          $ref: '#/components/schemas/Order/properties/id'
+                          $ref: "#/components/schemas/Order/properties/id"
                         provider:
                           type: object
                           properties:
                             id:
-                              $ref: '#/components/schemas/Provider/properties/id'
+                              $ref: "#/components/schemas/Provider/properties/id"
                         state:
-                          $ref: '#/components/schemas/State'  
+                          $ref: "#/components/schemas/State"
                         items:
                           type: array
                           items:
                             type: object
                             properties:
                               id:
-                                $ref: '#/components/schemas/Item/properties/id'
+                                $ref: "#/components/schemas/Item/properties/id"
                               quantity:
-                                $ref: '#/components/schemas/ItemQuantity/properties/selected'
+                                $ref: "#/components/schemas/ItemQuantity/properties/selected"
                         billing:
-                          $ref: '#/components/schemas/Billing'
+                          $ref: "#/components/schemas/Billing"
                         fulfillment:
-                          $ref: '#/components/schemas/Fulfillment'
+                          $ref: "#/components/schemas/Fulfillment"
                         quote:
-                          $ref: '#/components/schemas/Quotation'
+                          $ref: "#/components/schemas/Quotation"
                         payment:
-                          $ref: '#/components/schemas/Payment'
+                          $ref: "#/components/schemas/Payment"
 
                   required:
                     - order
                 error:
-                  $ref: '#/components/schemas/Error'
+                  $ref: "#/components/schemas/Error"
               required:
                 - context
             examples:
@@ -1015,35 +1015,35 @@ paths:
                     core_version: 0.7.1
                     transaction_id: 8ad631e4-01e7-44e1-a999-db41ef0ae4f6
                     message_id: 85a422c4-2867-4d72-b5f5-d31588e2f7c5
-                    timestamp: '2021-03-23T10:00:40.065Z'
+                    timestamp: "2021-03-23T10:00:40.065Z"
                   message:
                     order:
-                      id: '26492'
+                      id: "26492"
                       provider:
-                        id: '1'
+                        id: "1"
                         descriptor:
                           name: MAX Hospitals
                       state: PROVISIONALLY_BOOKED
                       items:
-                        - id: '1'
+                        - id: "1"
                           descriptor:
                             name: Consultation
-                          fulfillment_id: '2'
-                          provider_id: '1'
+                          fulfillment_id: "2"
+                          provider_id: "1"
                       billing:
                         name: John Doe
                         address:
-                          door: '12'
+                          door: "12"
                           building: Salarpuria Greenage
                           street: No 7, Hosur Road
-                          area_code: '560068'
+                          area_code: "560068"
                         email: john.doe@example.com
                         phone: +91-9999999999
                       fulfillment:
-                        id: '2'
+                        id: "2"
                         type: DIGITAL-OPD
                         person:
-                          id: '1'
+                          id: "1"
                           name: Dr Asthana
                           gender: male
                           image: https://image/of/person.png
@@ -1061,19 +1061,19 @@ paths:
                       quote:
                         price:
                           currency: INR
-                          value: '120'
+                          value: "120"
                           breakup:
-                            - consultation: '100'
-                            - phr_handling_fees: '10'
-                            - cgst: '5'
-                            - sgst: '5'
+                            - consultation: "100"
+                            - phr_handling_fees: "10"
+                            - cgst: "5"
+                            - sgst: "5"
                       payment:
                         uri: payto://ban/98273982749428?amount=INR:110&ifsc=SBIN0000575&message=hello
                         type: ON-ORDER
                         status: PAID
-                  
+
       responses:
-        '200':
+        "200":
           description: Acknowledgement of message received
           content:
             application/json:
@@ -1084,11 +1084,11 @@ paths:
                     type: object
                     properties:
                       ack:
-                        $ref: '#/components/schemas/Ack'
+                        $ref: "#/components/schemas/Ack"
                     required:
                       - ack
                   error:
-                    $ref: '#/components/schemas/Error'
+                    $ref: "#/components/schemas/Error"
                 required:
                   - message
   /on_status:
@@ -1104,16 +1104,16 @@ paths:
               type: object
               properties:
                 context:
-                  $ref: '#/components/schemas/Context'
+                  $ref: "#/components/schemas/Context"
                 message:
                   type: object
                   properties:
                     order:
-                      $ref: '#/components/schemas/Order'
+                      $ref: "#/components/schemas/Order"
                   required:
                     - order
                 error:
-                  $ref: '#/components/schemas/Error'
+                  $ref: "#/components/schemas/Error"
               required:
                 - context
             examples:
@@ -1127,35 +1127,35 @@ paths:
                     core_version: 0.7.1
                     transaction_id: 8ad631e4-01e7-44e1-a999-db41ef0ae4f6
                     message_id: 85a422c4-2867-4d72-b5f5-d31588e2f7c5
-                    timestamp: '2021-03-23T10:00:40.065Z'
+                    timestamp: "2021-03-23T10:00:40.065Z"
                   message:
                     order:
-                      id: '26492'
+                      id: "26492"
                       provider:
-                        id: '1'
+                        id: "1"
                         descriptor:
                           name: MAX Hospitals
                       state: PROVISIONALLY_BOOKED
                       items:
-                        - id: '1'
+                        - id: "1"
                           descriptor:
                             name: Consultation
-                          fulfillment_id: '2'
-                          provider_id: '1'
+                          fulfillment_id: "2"
+                          provider_id: "1"
                       billing:
                         name: John Doe
                         address:
-                          door: '12'
+                          door: "12"
                           building: Salarpuria Greenage
                           street: No 7, Hosur Road
-                          area_code: '560068'
+                          area_code: "560068"
                         email: john.doe@example.com
                         phone: +91-9999999999
                       fulfillment:
-                        id: '2'
+                        id: "2"
                         type: DIGITAL-OPD
                         person:
-                          id: '1'
+                          id: "1"
                           name: Dr Asthana
                           gender: male
                           image: https://image/of/person.png
@@ -1175,17 +1175,17 @@ paths:
                       quote:
                         price:
                           currency: INR
-                          value: '120'
+                          value: "120"
                           breakup:
-                            - consultation: '100'
-                            - phr_handling_fees: '10'
-                            - cgst: '5'
-                            - sgst: '5'
+                            - consultation: "100"
+                            - phr_handling_fees: "10"
+                            - cgst: "5"
+                            - sgst: "5"
                       payment:
                         uri: payto://ban/98273982749428?amount=INR:110&ifsc=SBIN0000575&message=hello
                         type: ON-ORDER
                         status: PAID
-                        
+
               Consultation Started:
                 value:
                   context:
@@ -1196,35 +1196,35 @@ paths:
                     core_version: 0.7.1
                     transaction_id: 8ad631e4-01e7-44e1-a999-db41ef0ae4f6
                     message_id: 85a422c4-2867-4d72-b5f5-d31588e2f7c5
-                    timestamp: '2021-03-23T10:00:40.065Z'
+                    timestamp: "2021-03-23T10:00:40.065Z"
                   message:
                     order:
-                      id: '26492'
+                      id: "26492"
                       provider:
-                        id: '1'
+                        id: "1"
                         descriptor:
                           name: MAX Hospitals
                       state: PROVISIONALLY_BOOKED
                       items:
-                        - id: '1'
+                        - id: "1"
                           descriptor:
                             name: Consultation
-                          fulfillment_id: '2'
-                          provider_id: '1'
+                          fulfillment_id: "2"
+                          provider_id: "1"
                       billing:
                         name: John Doe
                         address:
-                          door: '12'
+                          door: "12"
                           building: Salarpuria Greenage
                           street: No 7, Hosur Road
-                          area_code: '560068'
+                          area_code: "560068"
                         email: john.doe@example.com
                         phone: +91-9999999999
                       fulfillment:
-                        id: '2'
+                        id: "2"
                         type: DIGITAL-OPD
                         person:
-                          id: '1'
+                          id: "1"
                           name: Dr Asthana
                           gender: male
                           image: https://image/of/person.png
@@ -1244,17 +1244,17 @@ paths:
                       quote:
                         price:
                           currency: INR
-                          value: '120'
+                          value: "120"
                           breakup:
-                            - consultation: '100'
-                            - phr_handling_fees: '10'
-                            - cgst: '5'
-                            - sgst: '5'
+                            - consultation: "100"
+                            - phr_handling_fees: "10"
+                            - cgst: "5"
+                            - sgst: "5"
                       payment:
                         uri: payto://ban/98273982749428?amount=INR:110&ifsc=SBIN0000575&message=hello
                         type: ON-ORDER
                         status: PAID
-                        
+
               Prescription Generated:
                 value:
                   context:
@@ -1265,35 +1265,35 @@ paths:
                     core_version: 0.7.1
                     transaction_id: 8ad631e4-01e7-44e1-a999-db41ef0ae4f6
                     message_id: 85a422c4-2867-4d72-b5f5-d31588e2f7c5
-                    timestamp: '2021-03-23T10:00:40.065Z'
+                    timestamp: "2021-03-23T10:00:40.065Z"
                   message:
                     order:
-                      id: '26492'
+                      id: "26492"
                       provider:
-                        id: '1'
+                        id: "1"
                         descriptor:
                           name: MAX Hospitals
                       state: BOOKED
                       items:
-                        - id: '1'
+                        - id: "1"
                           descriptor:
                             name: Consultation
-                          fulfillment_id: '2'
-                          provider_id: '1'
+                          fulfillment_id: "2"
+                          provider_id: "1"
                       billing:
                         name: John Doe
                         address:
-                          door: '12'
+                          door: "12"
                           building: Salarpuria Greenage
                           street: No 7, Hosur Road
-                          area_code: '560068'
+                          area_code: "560068"
                         email: john.doe@example.com
                         phone: +91-9999999999
                       fulfillment:
-                        id: '2'
+                        id: "2"
                         type: DIGITAL-OPD
                         person:
-                          id: '1'
+                          id: "1"
                           name: Dr Asthana
                           gender: male
                           image: https://image/of/person.png
@@ -1313,17 +1313,17 @@ paths:
                       quote:
                         price:
                           currency: INR
-                          value: '120'
+                          value: "120"
                           breakup:
-                            - consultation: '100'
-                            - phr_handling_fees: '10'
-                            - cgst: '5'
-                            - sgst: '5'
+                            - consultation: "100"
+                            - phr_handling_fees: "10"
+                            - cgst: "5"
+                            - sgst: "5"
                       payment:
                         uri: payto://ban/98273982749428?amount=INR:110&ifsc=SBIN0000575&message=hello
                         type: ON-ORDER
                         status: PAID
-                        
+
               Consultation complete:
                 value:
                   context:
@@ -1334,35 +1334,35 @@ paths:
                     core_version: 0.7.1
                     transaction_id: 8ad631e4-01e7-44e1-a999-db41ef0ae4f6
                     message_id: 85a422c4-2867-4d72-b5f5-d31588e2f7c5
-                    timestamp: '2021-03-23T10:00:40.065Z'
+                    timestamp: "2021-03-23T10:00:40.065Z"
                   message:
                     order:
-                      id: '26492'
+                      id: "26492"
                       provider:
-                        id: '1'
+                        id: "1"
                         descriptor:
                           name: MAX Hospitals
                       state: BOOKED
                       items:
-                        - id: '1'
+                        - id: "1"
                           descriptor:
                             name: Consultation
-                          fulfillment_id: '2'
-                          provider_id: '1'
+                          fulfillment_id: "2"
+                          provider_id: "1"
                       billing:
                         name: John Doe
                         address:
-                          door: '12'
+                          door: "12"
                           building: Salarpuria Greenage
                           street: No 7, Hosur Road
-                          area_code: '560068'
+                          area_code: "560068"
                         email: john.doe@example.com
                         phone: +91-9999999999
                       fulfillment:
-                        id: '2'
+                        id: "2"
                         type: DIGITAL-OPD
                         person:
-                          id: '1'
+                          id: "1"
                           name: Dr Asthana
                           gender: male
                           image: https://image/of/person.png
@@ -1382,17 +1382,17 @@ paths:
                       quote:
                         price:
                           currency: INR
-                          value: '120'
+                          value: "120"
                           breakup:
-                            - consultation: '100'
-                            - phr_handling_fees: '10'
-                            - cgst: '5'
-                            - sgst: '5'
+                            - consultation: "100"
+                            - phr_handling_fees: "10"
+                            - cgst: "5"
+                            - sgst: "5"
                       payment:
                         uri: payto://ban/98273982749428?amount=INR:110&ifsc=SBIN0000575&message=hello
                         type: ON-ORDER
                         status: PAID
-                        
+
               Health Records uploaded:
                 value:
                   context:
@@ -1403,35 +1403,35 @@ paths:
                     core_version: 0.7.1
                     transaction_id: 8ad631e4-01e7-44e1-a999-db41ef0ae4f6
                     message_id: 85a422c4-2867-4d72-b5f5-d31588e2f7c5
-                    timestamp: '2021-03-23T10:00:40.065Z'
+                    timestamp: "2021-03-23T10:00:40.065Z"
                   message:
                     order:
-                      id: '26492'
+                      id: "26492"
                       provider:
-                        id: '1'
+                        id: "1"
                         descriptor:
                           name: MAX Hospitals
                       state: BOOKED
                       items:
-                        - id: '1'
+                        - id: "1"
                           descriptor:
                             name: Consultation
-                          fulfillment_id: '2'
-                          provider_id: '1'
+                          fulfillment_id: "2"
+                          provider_id: "1"
                       billing:
                         name: John Doe
                         address:
-                          door: '12'
+                          door: "12"
                           building: Salarpuria Greenage
                           street: No 7, Hosur Road
-                          area_code: '560068'
+                          area_code: "560068"
                         email: john.doe@example.com
                         phone: +91-9999999999
                       fulfillment:
-                        id: '2'
+                        id: "2"
                         type: DIGITAL-OPD
                         person:
-                          id: '1'
+                          id: "1"
                           name: Dr Asthana
                           gender: male
                           image: https://image/of/person.png
@@ -1451,22 +1451,22 @@ paths:
                       quote:
                         price:
                           currency: INR
-                          value: '120'
+                          value: "120"
                           breakup:
-                            - consultation: '100'
-                            - phr_handling_fees: '10'
-                            - cgst: '5'
-                            - sgst: '5'
+                            - consultation: "100"
+                            - phr_handling_fees: "10"
+                            - cgst: "5"
+                            - sgst: "5"
                       payment:
                         uri: payto://ban/98273982749428?amount=INR:110&ifsc=SBIN0000575&message=hello
                         type: ON-ORDER
                         status: PAID
                       data:
-                        uri: phr://view/98273982749428?phr=test@abdm&fulfillmentId=332214&hiType=OPConsultation
+                        uri: uhi://view/98273982749428?phr=test@abdm&fulfillmentId=332214&hiType=OPConsultation
                         type: ON-ORDER
                         status: UPLOADED-TO-PHR
       responses:
-        '200':
+        "200":
           description: Acknowledgement of message received
           content:
             application/json:
@@ -1477,14 +1477,14 @@ paths:
                     type: object
                     properties:
                       ack:
-                        $ref: '#/components/schemas/Ack'
+                        $ref: "#/components/schemas/Ack"
                     required:
                       - ack
                   error:
-                    $ref: '#/components/schemas/Error'
+                    $ref: "#/components/schemas/Error"
                 required:
                   - message
- 
+
 components:
   schemas:
     Ack:
@@ -1493,7 +1493,7 @@ components:
       properties:
         status:
           type: string
-          description: 'Describe the status of the ACK response. If schema validation passes, status is ACK else it is NACK'
+          description: "Describe the status of the ACK response. If schema validation passes, status is ACK else it is NACK"
           enum:
             - ACK
             - NACK
@@ -1508,7 +1508,7 @@ components:
           description: Door / Shop number of the address
         name:
           type: string
-          description: 'Name of address if applicable. Example, shop name'
+          description: "Name of address if applicable. Example, shop name"
         building:
           type: string
           description: Name of the building or block
@@ -1517,7 +1517,7 @@ components:
           description: Street name or number
         locality:
           type: string
-          description: 'Name of the locality, apartments'
+          description: "Name of the locality, apartments"
         ward:
           type: string
           description: Name or number of the ward if applicable
@@ -1532,12 +1532,12 @@ components:
           description: Country name
         area_code:
           type: string
-          description: 'Area code. This can be Pincode, ZIP code or any equivalent'
+          description: "Area code. This can be Pincode, ZIP code or any equivalent"
     Agent:
       description: Describes an order executor
       allOf:
-        - $ref: '#/components/schemas/Person'
-        - $ref: '#/components/schemas/Contact'
+        - $ref: "#/components/schemas/Person"
+        - $ref: "#/components/schemas/Contact"
         - type: object
     Billing:
       description: Describes a billing event
@@ -1547,16 +1547,16 @@ components:
           description: Personal details of the customer needed for billing.
           type: string
         organization:
-          $ref: '#/components/schemas/Organization'
+          $ref: "#/components/schemas/Organization"
         address:
-          $ref: '#/components/schemas/Address'
+          $ref: "#/components/schemas/Address"
         email:
           type: string
           format: email
         phone:
           type: string
         time:
-          $ref: '#/components/schemas/Time'
+          $ref: "#/components/schemas/Time"
         tax_number:
           type: string
         created_at:
@@ -1573,23 +1573,23 @@ components:
       type: object
       properties:
         descriptor:
-          $ref: '#/components/schemas/Descriptor'
+          $ref: "#/components/schemas/Descriptor"
         categories:
           type: array
           items:
-            $ref: '#/components/schemas/Category'
+            $ref: "#/components/schemas/Category"
         fulfillments:
           type: array
           items:
-            $ref: '#/components/schemas/Fulfillment'
+            $ref: "#/components/schemas/Fulfillment"
         payments:
           type: array
           items:
-            $ref: '#/components/schemas/Payment'
+            $ref: "#/components/schemas/Payment"
         providers:
           type: array
           items:
-            $ref: '#/components/schemas/Provider'
+            $ref: "#/components/schemas/Provider"
         exp:
           type: string
           description: Time after which catalog has to be refreshed
@@ -1602,13 +1602,13 @@ components:
           type: string
           description: Unique id of the category
         parent_category_id:
-          $ref: '#/components/schemas/Category/properties/id'
+          $ref: "#/components/schemas/Category/properties/id"
         descriptor:
-          $ref: '#/components/schemas/Descriptor'
+          $ref: "#/components/schemas/Descriptor"
         time:
-          $ref: '#/components/schemas/Time'
+          $ref: "#/components/schemas/Time"
         tags:
-          $ref: '#/components/schemas/Tags'
+          $ref: "#/components/schemas/Tags"
     City:
       description: Describes a city
       type: object
@@ -1627,20 +1627,20 @@ components:
         email:
           type: string
         tags:
-          $ref: '#/components/schemas/Tags'
+          $ref: "#/components/schemas/Tags"
     Context:
       description: Describes a DHP message context
       type: object
       properties:
         domain:
-          $ref: '#/components/schemas/Domain'
+          $ref: "#/components/schemas/Domain"
         country:
-          $ref: '#/components/schemas/Country/properties/code'
+          $ref: "#/components/schemas/Country/properties/code"
         city:
-          $ref: '#/components/schemas/City/properties/code'
+          $ref: "#/components/schemas/City/properties/code"
         action:
           type: string
-          description: Describes a specific order-lifecycle interaction that occurs between a BAP and a BPP. 
+          description: Describes a specific order-lifecycle interaction that occurs between a BAP and a BPP.
           enum:
             - search
             - select
@@ -1680,10 +1680,10 @@ components:
           description: URI of the Provider. Must have the same domain name as the provider_id
         transaction_id:
           type: string
-          description: Created by the BAP when calling the confirm API call. This is the network-level identifier of a confirmed order. All calls referring to a confirmed order must contain this value. Calls not referring to a confirmed order do not need to send transaction_id.  
+          description: Created by the BAP when calling the confirm API call. This is the network-level identifier of a confirmed order. All calls referring to a confirmed order must contain this value. Calls not referring to a confirmed order do not need to send transaction_id.
         message_id:
           type: string
-          description: UUID to map a request to a callback. Generated by the initiator of a request-callback cycle. It is used to match ansynchronous requests to callbacks. It is also used when unsolicited callback APIs are called. 
+          description: UUID to map a request to a callback. Generated by the initiator of a request-callback cycle. It is used to match ansynchronous requests to callbacks. It is also used when unsolicited callback APIs are called.
         timestamp:
           type: string
           format: date-time
@@ -1707,7 +1707,7 @@ components:
     DecimalValue:
       description: Describes a decimal value
       type: string
-      pattern: '[+-]?([0-9]*[.])?[0-9]+'
+      pattern: "[+-]?([0-9]*[.])?[0-9]+"
 
     Descriptor:
       description: Describes the description of a real-world object.
@@ -1726,7 +1726,7 @@ components:
         images:
           type: array
           items:
-            $ref: '#/components/schemas/Image'
+            $ref: "#/components/schemas/Image"
         audio:
           type: string
           format: uri
@@ -1750,7 +1750,7 @@ components:
           type: string
         code:
           type: string
-          description: 'DHP specific error code. For full list of error codes, refer to error_codes.md in the root folder of this repo'
+          description: "DHP specific error code. For full list of error codes, refer to error_codes.md in the root folder of this repo"
         path:
           type: string
           description: Path to json schema generating the error. Used only during json schema validation errors
@@ -1772,9 +1772,9 @@ components:
           type: string
           description: This describes the type of fulfillment
         provider_id:
-          $ref: '#/components/schemas/Provider/properties/id'
+          $ref: "#/components/schemas/Provider/properties/id"
         state:
-          $ref: '#/components/schemas/State'
+          $ref: "#/components/schemas/State"
         tracking:
           type: boolean
           description: Indicates whether the fulfillment allows tracking
@@ -1783,63 +1783,63 @@ components:
           type: object
           properties:
             person:
-              $ref: '#/components/schemas/Person'
+              $ref: "#/components/schemas/Person"
             contact:
-              $ref: '#/components/schemas/Contact'
+              $ref: "#/components/schemas/Contact"
         agent:
-          $ref: '#/components/schemas/Agent'
+          $ref: "#/components/schemas/Agent"
         contact:
-          $ref: '#/components/schemas/Contact'
+          $ref: "#/components/schemas/Contact"
         start:
           description: Details on the start of fulfillment
           type: object
           properties:
             time:
-              $ref: '#/components/schemas/Time'
+              $ref: "#/components/schemas/Time"
             instructions:
-              $ref: '#/components/schemas/Descriptor'
+              $ref: "#/components/schemas/Descriptor"
             contact:
-              $ref: '#/components/schemas/Contact'
+              $ref: "#/components/schemas/Contact"
             person:
-              $ref: '#/components/schemas/Person'
+              $ref: "#/components/schemas/Person"
         end:
           description: Details on the end of fulfillment
           type: object
           properties:
             time:
-              $ref: '#/components/schemas/Time'
+              $ref: "#/components/schemas/Time"
             instructions:
-              $ref: '#/components/schemas/Descriptor'
+              $ref: "#/components/schemas/Descriptor"
             contact:
-              $ref: '#/components/schemas/Contact'
+              $ref: "#/components/schemas/Contact"
             person:
-              $ref: '#/components/schemas/Person'
+              $ref: "#/components/schemas/Person"
         tags:
-          $ref: '#/components/schemas/Tags'
-    
+          $ref: "#/components/schemas/Tags"
+
     Image:
-      description: 'Image of an object. <br/><br/> A url based image will look like <br/><br/>```uri:http://path/to/image``` <br/><br/>'
+      description: "Image of an object. <br/><br/> A url based image will look like <br/><br/>```uri:http://path/to/image``` <br/><br/>"
       type: string
-    
+
     Intent:
       description: Intent of a user. Used for searching for services
       type: object
       properties:
         descriptor:
-          $ref: '#/components/schemas/Descriptor'
+          $ref: "#/components/schemas/Descriptor"
         provider:
-          $ref: '#/components/schemas/Provider'
+          $ref: "#/components/schemas/Provider"
         fulfillment:
-          $ref: '#/components/schemas/Fulfillment'
+          $ref: "#/components/schemas/Fulfillment"
         payment:
-          $ref: '#/components/schemas/Payment'
+          $ref: "#/components/schemas/Payment"
         category:
-          $ref: '#/components/schemas/Category'
+          $ref: "#/components/schemas/Category"
         item:
-          $ref: '#/components/schemas/Item'
+          $ref: "#/components/schemas/Item"
         tags:
-          $ref: '#/components/schemas/Tags'
-            
+          $ref: "#/components/schemas/Tags"
+
     ItemQuantity:
       description: Describes count or amount of an item
       type: object
@@ -1851,7 +1851,7 @@ components:
               type: integer
               minimum: 0
             measure:
-              $ref: '#/components/schemas/Scalar'
+              $ref: "#/components/schemas/Scalar"
         available:
           type: object
           properties:
@@ -1859,7 +1859,7 @@ components:
               type: integer
               minimum: 0
             measure:
-              $ref: '#/components/schemas/Scalar'
+              $ref: "#/components/schemas/Scalar"
         maximum:
           type: object
           properties:
@@ -1867,7 +1867,7 @@ components:
               type: integer
               minimum: 1
             measure:
-              $ref: '#/components/schemas/Scalar'
+              $ref: "#/components/schemas/Scalar"
         minimum:
           type: object
           properties:
@@ -1875,7 +1875,7 @@ components:
               type: integer
               minimum: 0
             measure:
-              $ref: '#/components/schemas/Scalar'
+              $ref: "#/components/schemas/Scalar"
         selected:
           type: object
           properties:
@@ -1883,7 +1883,7 @@ components:
               type: integer
               minimum: 0
             measure:
-              $ref: '#/components/schemas/Scalar'
+              $ref: "#/components/schemas/Scalar"
     Item:
       description: Describes an item. Allows for domain extension.
       type: object
@@ -1891,19 +1891,19 @@ components:
         id:
           description: This is the most unique identifier of a service item. An example of an Item ID could be the SKU of a product.
           type: string
-          format: '#/components/schemas/Item/properties/id'
+          format: "#/components/schemas/Item/properties/id"
         parent_item_id:
-          $ref: '#/components/schemas/Item/properties/id'
+          $ref: "#/components/schemas/Item/properties/id"
         descriptor:
-          $ref: '#/components/schemas/Descriptor'
+          $ref: "#/components/schemas/Descriptor"
         price:
-          $ref: '#/components/schemas/Price'
+          $ref: "#/components/schemas/Price"
         category_id:
-          $ref: '#/components/schemas/Category/properties/id'
+          $ref: "#/components/schemas/Category/properties/id"
         fulfillment_id:
-          $ref: '#/components/schemas/Fulfillment/properties/id'
+          $ref: "#/components/schemas/Fulfillment/properties/id"
         time:
-          $ref: '#/components/schemas/Time'
+          $ref: "#/components/schemas/Time"
         matched:
           type: boolean
         related:
@@ -1911,17 +1911,17 @@ components:
         recommended:
           type: boolean
         tags:
-          $ref: '#/components/schemas/Tags'
+          $ref: "#/components/schemas/Tags"
     Language:
       description: indicates language code. DHP supports country codes as per ISO 639.2 standard
       type: object
       properties:
         code:
           type: string
-   
+
     Name:
       type: string
-      description: 'Describes the name of a person in format: ./{given_name}/{honorific_prefix}/{first_name}/{middle_name}/{last_name}/{honorific_suffix}'
+      description: "Describes the name of a person in format: ./{given_name}/{honorific_prefix}/{first_name}/{middle_name}/{last_name}/{honorific_suffix}"
       pattern: '^\./[^/]+/[^/]*/[^/]*/[^/]*/[^/]*/[^/]*$'
 
     Order:
@@ -1937,26 +1937,26 @@ components:
           type: object
           properties:
             id:
-              $ref: '#/components/schemas/Provider/properties/id'
+              $ref: "#/components/schemas/Provider/properties/id"
         items:
           type: array
           items:
             type: object
             properties:
               id:
-                $ref: '#/components/schemas/Item/properties/id'
+                $ref: "#/components/schemas/Item/properties/id"
               quantity:
-                $ref: '#/components/schemas/ItemQuantity/properties/selected'
+                $ref: "#/components/schemas/ItemQuantity/properties/selected"
             required:
               - id
         billing:
-          $ref: '#/components/schemas/Billing'
+          $ref: "#/components/schemas/Billing"
         fulfillment:
-          $ref: '#/components/schemas/Fulfillment'
+          $ref: "#/components/schemas/Fulfillment"
         quote:
-          $ref: '#/components/schemas/Quotation'
+          $ref: "#/components/schemas/Quotation"
         payment:
-          $ref: '#/components/schemas/Payment'
+          $ref: "#/components/schemas/Payment"
         created_at:
           type: string
           format: date-time
@@ -1988,7 +1988,7 @@ components:
       properties:
         uri:
           type: string
-          description: 'A payment target uri to be called by the DHP-Consumer. Supported formats are <br></br>a) https and, <br></br>b) payto - Refer to RFC8905'
+          description: "A payment target uri to be called by the DHP-Consumer. Supported formats are <br></br>a) https and, <br></br>b) payto - Refer to RFC8905"
           format: uri
         tl_method:
           type: string
@@ -2004,9 +2004,9 @@ components:
             transaction_status:
               type: string
             amount:
-              $ref: '#/components/schemas/Price/properties/value'
+              $ref: "#/components/schemas/Price/properties/value"
             currency:
-              $ref: '#/components/schemas/Price/properties/currency'
+              $ref: "#/components/schemas/Price/properties/currency"
           additionalProperties:
             type: string
           required:
@@ -2025,7 +2025,7 @@ components:
             - PAID
             - NOT-PAID
         time:
-          $ref: '#/components/schemas/Time'
+          $ref: "#/components/schemas/Time"
 
     Person:
       description: Describes a person.
@@ -2034,19 +2034,19 @@ components:
         id:
           type: string
         name:
-          $ref: '#/components/schemas/Name'
+          $ref: "#/components/schemas/Name"
         image:
-          $ref: '#/components/schemas/Image'
+          $ref: "#/components/schemas/Image"
         dob:
           type: string
           format: date
         gender:
           type: string
-          description: 'Gender of something, typically a Person, but possibly also fictional characters, animals, etc. While Male and Female may be used, text strings are also acceptable for people who do not identify as a binary gender'
+          description: "Gender of something, typically a Person, but possibly also fictional characters, animals, etc. While Male and Female may be used, text strings are also acceptable for people who do not identify as a binary gender"
         cred:
           type: string
         tags:
-          $ref: '#/components/schemas/Tags'
+          $ref: "#/components/schemas/Tags"
       required:
         - name
 
@@ -2057,11 +2057,11 @@ components:
         id:
           type: string
         descriptor:
-          $ref: '#/components/schemas/Descriptor'
+          $ref: "#/components/schemas/Descriptor"
         parent_policy_id:
-          $ref: '#/components/schemas/Policy/properties/id'
+          $ref: "#/components/schemas/Policy/properties/id"
         time:
-          $ref: '#/components/schemas/Time'
+          $ref: "#/components/schemas/Time"
 
     Price:
       description: Describes the price of an item. Allows for domain extension.
@@ -2070,63 +2070,63 @@ components:
         currency:
           type: string
         value:
-          $ref: '#/components/schemas/DecimalValue'
+          $ref: "#/components/schemas/DecimalValue"
         estimated_value:
-          $ref: '#/components/schemas/DecimalValue'
+          $ref: "#/components/schemas/DecimalValue"
         computed_value:
-          $ref: '#/components/schemas/DecimalValue'
+          $ref: "#/components/schemas/DecimalValue"
         listed_value:
-          $ref: '#/components/schemas/DecimalValue'
+          $ref: "#/components/schemas/DecimalValue"
         offered_value:
-          $ref: '#/components/schemas/DecimalValue'
+          $ref: "#/components/schemas/DecimalValue"
         minimum_value:
-          $ref: '#/components/schemas/DecimalValue'
+          $ref: "#/components/schemas/DecimalValue"
         maximum_value:
-          $ref: '#/components/schemas/DecimalValue'
-          
+          $ref: "#/components/schemas/DecimalValue"
+
     Provider:
-      description: 'Describes a service provider. This can be a restaurant, a hospital, a Store etc'
+      description: "Describes a service provider. This can be a restaurant, a hospital, a Store etc"
       type: object
       properties:
         id:
           type: string
-          description: 'Id of the provider'
+          description: "Id of the provider"
         descriptor:
-          $ref: '#/components/schemas/Descriptor'
+          $ref: "#/components/schemas/Descriptor"
         category_id:
           type: string
-          description: 'Category Id of the provider'
+          description: "Category Id of the provider"
         time:
-          $ref: '#/components/schemas/Time'
+          $ref: "#/components/schemas/Time"
         categories:
           type: array
           items:
-            $ref: '#/components/schemas/Category'
+            $ref: "#/components/schemas/Category"
         fulfillments:
           type: array
           items:
-            $ref: '#/components/schemas/Fulfillment'
+            $ref: "#/components/schemas/Fulfillment"
         payments:
           type: array
           items:
-            $ref: '#/components/schemas/Payment'
+            $ref: "#/components/schemas/Payment"
         items:
           type: array
           items:
-            $ref: '#/components/schemas/Item'
+            $ref: "#/components/schemas/Item"
         exp:
           type: string
           description: Time after which catalog has to be refreshed
           format: date-time
         tags:
-          $ref: '#/components/schemas/Tags'
+          $ref: "#/components/schemas/Tags"
 
     Quotation:
       description: Describes a quote
       type: object
       properties:
         price:
-          $ref: '#/components/schemas/Price'
+          $ref: "#/components/schemas/Price"
         breakup:
           type: array
           items:
@@ -2135,9 +2135,9 @@ components:
               title:
                 type: string
               price:
-                $ref: '#/components/schemas/Price'
+                $ref: "#/components/schemas/Price"
         ttl:
-          $ref: '#/components/schemas/Duration'
+          $ref: "#/components/schemas/Duration"
 
     Scalar:
       description: An object representing a scalar quantity.
@@ -2172,7 +2172,7 @@ components:
       type: object
       properties:
         frequency:
-          $ref: '#/components/schemas/Duration'
+          $ref: "#/components/schemas/Duration"
         holidays:
           type: array
           items:
@@ -2189,7 +2189,7 @@ components:
       type: object
       properties:
         descriptor:
-          $ref: '#/components/schemas/Descriptor'
+          $ref: "#/components/schemas/Descriptor"
         updated_at:
           type: string
           format: date-time
@@ -2199,7 +2199,7 @@ components:
 
     Subscriber:
       type: object
-      description: 'Any entity which wants to authenticate itself on a network. This can be a DHP-Consumer, DHP-Provider, DG.'
+      description: "Any entity which wants to authenticate itself on a network. This can be a DHP-Consumer, DHP-Provider, DG."
       properties:
         subscriber_id:
           type: string
@@ -2214,11 +2214,11 @@ components:
           type: string
           description: Callback URL of the subscriber. The Registry will call this URL's on_subscribe API to validate the subscriber\'s credentials
         domain:
-          $ref: '#/components/schemas/Domain'
+          $ref: "#/components/schemas/Domain"
         city:
-          $ref: '#/components/schemas/City/properties/code'
+          $ref: "#/components/schemas/City/properties/code"
         country:
-          $ref: '#/components/schemas/Country/properties/code'
+          $ref: "#/components/schemas/Country/properties/code"
         signing_public_key:
           type: string
           description: 'Signing Public key of the subscriber. <br/><br/>Any subscriber platform (dhp_consumer, dhp_provider, dg) who wants to transact on the network must digitally sign the ```requestBody``` using the corresponding private key of this public key and send it in the transport layer header. In case of ```HTTP``` it is the ```Authorization``` header. <br><br/>The ```Authorization``` will be used to validate the signature of a dhp_consumer or dhp_provider.<br/><br/>Furthermore, if an API call is being proxied or multicast by a DHP Gateway, the BG must use it\''s signing key to digitally sign the ```requestBody``` using the corresponding private key of this public key and send it in the ```Proxy-Authorization``` header.'
@@ -2260,7 +2260,7 @@ components:
           type: string
           format: date-time
         duration:
-          $ref: '#/components/schemas/Duration'
+          $ref: "#/components/schemas/Duration"
         range:
           type: object
           properties:
@@ -2274,4 +2274,4 @@ components:
           type: string
           description: comma separated values representing days of the week
         schedule:
-          $ref: '#/components/schemas/Schedule'
+          $ref: "#/components/schemas/Schedule"
