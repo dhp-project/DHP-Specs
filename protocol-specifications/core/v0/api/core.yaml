@@ -44,6 +44,7 @@ paths:
                       item:
                         descriptor:
                           name: MRI Scan
+                          
               Get details of a specific healthcare service:
                 value:
                   context:
@@ -58,6 +59,7 @@ paths:
                     intent:
                       item:
                         id: 289edce4-d002-4962-b311-4c025e22b4f6
+                        
               Search by healthcare service provider name:
                 value:
                   context:
@@ -73,6 +75,7 @@ paths:
                       provider:
                         descriptor:
                           name: MAX Hospitals
+                          
               Get services of a specific healthcare service provider:
                 value:
                   context:
@@ -87,6 +90,7 @@ paths:
                     intent:
                       provider:
                         id: 675eecec-2da8-41e1-9303-3aeac992bb7e
+                        
               Search by healthcare services category name:
                 value:
                   context:
@@ -106,6 +110,7 @@ paths:
                         person:
                           descriptor:
                             name: Dr Asthana
+                            
               Get all healthcare services under a category:
                 value:
                   context:
@@ -120,6 +125,7 @@ paths:
                     intent:
                       category:
                         id: c63a05de-242f-4314-a748-323f71a1d3b1
+                        
               Search by Healthcare Professional Name:
                 value:
                   context:
@@ -136,6 +142,7 @@ paths:
                         person:
                           descriptor:
                             name: Dr Asthana
+                            
               Search by Healthcare professional ID:
                 value:
                   context:
@@ -151,6 +158,7 @@ paths:
                       fulfillment:
                         person:
                           cred: uhiId:98479873843985
+                          
               Search by Healthcare Fulfillment Service timings:
                 value:
                   context:
@@ -170,6 +178,7 @@ paths:
                         end:
                           time:
                             timestamp: 2021-03-23T11:00.000Z
+                            
               Search for teleconsultation services by symptom:
                 value:
                   context:
@@ -187,7 +196,8 @@ paths:
                           name: ent
                       tags:
                         symptoms: cough,fever
-                        temperature: 101 C
+                        temperature": 101 C
+                        
               Search for a cardiologist with 5+ years of experience and who can speak Kannada:
                 value:
                   context:
@@ -208,6 +218,7 @@ paths:
                           tags:
                             exp: gt 5Y
                             lang: kan
+                            
               Search for a female doctor in Bangalore who speaks Hindi and is from Internal Medicine department:
                 value:
                   context:
@@ -228,6 +239,7 @@ paths:
                       category:
                         descriptor:
                           code: INTERNAL_MEDICINE
+                  
       responses:
         '200':
           description: Acknowledgement of message received
@@ -371,7 +383,7 @@ paths:
                         fulfillment:
                           $ref: '#/components/schemas/Fulfillment'
                         quote:
-                          $ref: '#/components/schemas/Quotation'
+                          $ref: '#/components/schemas/Quotation'  
                   required:
                     - order
               required:
@@ -454,7 +466,7 @@ paths:
                             id:
                               $ref: '#/components/schemas/Provider/properties/id'
                         state:
-                          $ref: '#/components/schemas/State'
+                          $ref: '#/components/schemas/State'  
                         items:
                           type: array
                           items:
@@ -673,6 +685,7 @@ paths:
                                 name: Consultation
                               category_id: '1'
                               fulfillment_id: '4'
+                  
       responses:
         '200':
           description: Acknowledgement of message received
@@ -779,6 +792,7 @@ paths:
                             - consultation: '100'
                             - cgst: '5'
                             - sgst: '5'
+                    
       responses:
         '200':
           description: Acknowledgement of message received
@@ -826,7 +840,7 @@ paths:
                             id:
                               $ref: '#/components/schemas/Provider/properties/id'
                         state:
-                          $ref: '#/components/schemas/State'
+                          $ref: '#/components/schemas/State'  
                         items:
                           type: array
                           items:
@@ -864,7 +878,7 @@ paths:
                   message:
                     order:
                       id: '26492'
-                      state: "PROVISIONALLY_BOOKED"
+                      state : "PROVISIONALLY_BOOKED"
                       provider:
                         id: '1'
                         descriptor:
@@ -913,10 +927,7 @@ paths:
                         uri: payto://ban/98273982749428?amount=INR:110&ifsc=SBIN0000575&message=hello
                         type: ON-ORDER
                         status: PENDING
-                      data:
-                        uri: uhi://consent/98273982749428?phr=test@abdm&code=PATRQT&hi=OPC&subscr=true&id=12231
-                        type: ON-ORDER
-                        status: PENDING
+                  
 
       responses:
         '200':
@@ -965,7 +976,7 @@ paths:
                             id:
                               $ref: '#/components/schemas/Provider/properties/id'
                         state:
-                          $ref: '#/components/schemas/State'
+                          $ref: '#/components/schemas/State'  
                         items:
                           type: array
                           items:
@@ -1057,6 +1068,7 @@ paths:
                         uri: payto://ban/98273982749428?amount=INR:110&ifsc=SBIN0000575&message=hello
                         type: ON-ORDER
                         status: PAID
+                  
       responses:
         '200':
           description: Acknowledgement of message received
@@ -1170,6 +1182,7 @@ paths:
                         uri: payto://ban/98273982749428?amount=INR:110&ifsc=SBIN0000575&message=hello
                         type: ON-ORDER
                         status: PAID
+                        
               Consultation Started:
                 value:
                   context:
@@ -1238,6 +1251,7 @@ paths:
                         uri: payto://ban/98273982749428?amount=INR:110&ifsc=SBIN0000575&message=hello
                         type: ON-ORDER
                         status: PAID
+                        
               Prescription Generated:
                 value:
                   context:
@@ -1306,6 +1320,7 @@ paths:
                         uri: payto://ban/98273982749428?amount=INR:110&ifsc=SBIN0000575&message=hello
                         type: ON-ORDER
                         status: PAID
+                        
               Consultation complete:
                 value:
                   context:
@@ -1374,6 +1389,7 @@ paths:
                         uri: payto://ban/98273982749428?amount=INR:110&ifsc=SBIN0000575&message=hello
                         type: ON-ORDER
                         status: PAID
+                        
               Health Records uploaded:
                 value:
                   context:
@@ -1442,10 +1458,6 @@ paths:
                         uri: payto://ban/98273982749428?amount=INR:110&ifsc=SBIN0000575&message=hello
                         type: ON-ORDER
                         status: PAID
-                      data:
-                        uri: uhi://view/98273982749428?phr=test@abdm&fulfillmentId=332214&hiType=OPConsultation
-                        type: ON-ORDER
-                        status: UPLOADED-TO-PHR
       responses:
         '200':
           description: Acknowledgement of message received
@@ -1465,6 +1477,7 @@ paths:
                     $ref: '#/components/schemas/Error'
                 required:
                   - message
+ 
 components:
   schemas:
     Ack:
@@ -1660,7 +1673,7 @@ components:
           description: URI of the Provider. Must have the same domain name as the provider_id
         transaction_id:
           type: string
-          description: Created by the BAP when calling the confirm API call. This is the network-level identifier of a confirmed order. All calls referring to a confirmed order must contain this value. Calls not referring to a confirmed order do not need to send transaction_id. 
+          description: Created by the BAP when calling the confirm API call. This is the network-level identifier of a confirmed order. All calls referring to a confirmed order must contain this value. Calls not referring to a confirmed order do not need to send transaction_id.  
         message_id:
           type: string
           description: UUID to map a request to a callback. Generated by the initiator of a request-callback cycle. It is used to match ansynchronous requests to callbacks. It is also used when unsolicited callback APIs are called. 
@@ -1769,7 +1782,7 @@ components:
         agent:
           $ref: '#/components/schemas/Agent'
         contact:
-          $ref: '#/components/schemas/Contact'
+          $ref: '#/components/schemas/Contcat'
         start:
           description: Details on the start of fulfillment
           type: object
@@ -1796,9 +1809,11 @@ components:
               $ref: '#/components/schemas/Person'
         tags:
           $ref: '#/components/schemas/Tags'
+    
     Image:
       description: 'Image of an object. <br/><br/> A url based image will look like <br/><br/>```uri:http://path/to/image``` <br/><br/>'
       type: string
+    
     Intent:
       description: Intent of a user. Used for searching for services
       type: object
@@ -1817,6 +1832,7 @@ components:
           $ref: '#/components/schemas/Item'
         tags:
           $ref: '#/components/schemas/Tags'
+            
     ItemQuantity:
       description: Describes count or amount of an item
       type: object
@@ -1895,6 +1911,7 @@ components:
       properties:
         code:
           type: string
+   
     Name:
       type: string
       description: 'Describes the name of a person in format: ./{given_name}/{honorific_prefix}/{first_name}/{middle_name}/{last_name}/{honorific_suffix}'
@@ -2059,6 +2076,7 @@ components:
           $ref: '#/components/schemas/DecimalValue'
         maximum_value:
           $ref: '#/components/schemas/DecimalValue'
+          
     Provider:
       description: 'Describes a service provider. This can be a restaurant, a hospital, a Store etc'
       type: object
