@@ -195,8 +195,8 @@ paths:
                         descriptor:
                           name: ent
                       tags:
-                        ./dhp-0_7_1.symptoms: cough,fever
-                        ./dhp-0_7_1.temperature": 101 C
+                        symptoms: cough,fever
+                        temperature": 101 C
                         
               Search for a cardiologist with 5+ years of experience and who can speak Kannada:
                 value:
@@ -216,8 +216,8 @@ paths:
                       fulfillment:
                         person:
                           tags:
-                            ./dhp-0_7_1.exp: gt 5Y
-                            ./dhp-0_7_1.lang: kan
+                            exp: gt 5Y
+                            lang: kan
                             
               Search for a female doctor in Bangalore who speaks Hindi and is from Internal Medicine department:
                 value:
@@ -234,8 +234,8 @@ paths:
                       fulfillment:
                         person:
                           tags:
-                            ./dhp-0_7_1.gender: female
-                            ./dhp-0_7_1.lang: hin
+                            gender: female
+                            lang: hin
                       category:
                         descriptor:
                           code: INTERNAL_MEDICINE
@@ -789,9 +789,9 @@ paths:
                           currency: INR
                           value: '110'
                           breakup:
-                            - ./dhp-0_7_1.consultation: '100'
-                            - ./dhp-0_7_1.cgst: '5'
-                            - ./dhp-0_7_1.sgst: '5'
+                            - consultation: '100'
+                            - cgst: '5'
+                            - sgst: '5'
                     
       responses:
         '200':
@@ -919,10 +919,10 @@ paths:
                           currency: INR
                           value: '120'
                           breakup:
-                            - ./dhp-0_7_1.consultation: '100'
-                            - ./dhp-0_7_1.phr_handling_fees: '10'
-                            - ./ind-gstin.cgst: '5'
-                            - ./ind-gstin.sgst: '5'
+                            - consultation: '100'
+                            - phr_handling_fees: '10'
+                            - cgst: '5'
+                            - sgst: '5'
                       payment:
                         uri: payto://ban/98273982749428?amount=INR:110&ifsc=SBIN0000575&message=hello
                         type: ON-ORDER
@@ -1053,17 +1053,17 @@ paths:
                             start: T10:15Z
                             end: T10:30Z
                         customer:
-                          ./nha.health_id: 61-8787-9274-4422
-                          ./nha.phr_address: example@ndhm
+                          id: uhi://health_id/61-8787-9274-4422
+                          "@abdm/org/phr_address": example@ndhm
                       quote:
                         price:
                           currency: INR
                           value: '120'
                           breakup:
-                            - ./dhp-0_7_1.consultation: '100'
-                            - ./dhp-0_7_1.phr_handling_fees: '10'
-                            - ./ind-gstin.cgst: '5'
-                            - ./ind-gstin.sgst: '5'
+                            - consultation: '100'
+                            - phr_handling_fees: '10'
+                            - cgst: '5'
+                            - sgst: '5'
                       payment:
                         uri: payto://ban/98273982749428?amount=INR:110&ifsc=SBIN0000575&message=hello
                         type: ON-ORDER
@@ -1165,19 +1165,19 @@ paths:
                             start: T10:15Z
                             end: T10:30Z
                         customer:
-                          ./dhp-0_7_1.health_id: 61-8787-9274-4422
-                          ./dhp-0_7_1.phr_address: example@ndhm
+                          health_id: 61-8787-9274-4422
+                          phr_address: example@ndhm
                         tags:
-                          ./dhp-0_7_1.teleconf_url: https://us06web.zoom.us/j/82071160538
+                          teleconf_url: https://us06web.zoom.us/j/82071160538
                       quote:
                         price:
                           currency: INR
                           value: '120'
                           breakup:
-                            - ./dhp-0_7_1.consultation: '100'
-                            - ./dhp-0_7_1.phr_handling_fees: '10'
-                            - ./ind-gstin.cgst: '5'
-                            - ./ind-gstin.sgst: '5'
+                            - consultation: '100'
+                            - phr_handling_fees: '10'
+                            - cgst: '5'
+                            - sgst: '5'
                       payment:
                         uri: payto://ban/98273982749428?amount=INR:110&ifsc=SBIN0000575&message=hello
                         type: ON-ORDER
@@ -1234,19 +1234,19 @@ paths:
                             start: T10:15Z
                             end: T10:30Z
                         customer:
-                          ./dhp-0_7_1.health_id: 61-8787-9274-4422
-                          ./dhp-0_7_1.phr_address: example@ndhm
+                          health_id: 61-8787-9274-4422
+                          phr_address: example@ndhm
                         tags:
-                          ./dhp-0_7_1.teleconf_url: https://us06web.zoom.us/j/82071160538
+                          teleconf_url: https://us06web.zoom.us/j/82071160538
                       quote:
                         price:
                           currency: INR
                           value: '120'
                           breakup:
-                            - ./dhp-0_7_1.consultation: '100'
-                            - ./dhp-0_7_1.phr_handling_fees: '10'
-                            - ./ind-gstin.cgst: '5'
-                            - ./ind-gstin.sgst: '5'
+                            - consultation: '100'
+                            - phr_handling_fees: '10'
+                            - cgst: '5'
+                            - sgst: '5'
                       payment:
                         uri: payto://ban/98273982749428?amount=INR:110&ifsc=SBIN0000575&message=hello
                         type: ON-ORDER
@@ -1303,19 +1303,19 @@ paths:
                             start: T10:15Z
                             end: T10:30Z
                         customer:
-                          ./nha.health_id: 61-8787-9274-4422
-                          ./nha.phr_address: example@ndhm
+                          id: uhi://health_id/61-8787-9274-4422
+                          "@abdm/org/phr_address": example@ndhm
                         tags:
-                          ./dhp-0_7_1.teleconf_url: https://us06web.zoom.us/j/82071160538
+                          teleconf_url: https://us06web.zoom.us/j/82071160538
                       quote:
                         price:
                           currency: INR
                           value: '120'
                           breakup:
-                            - ./dhp-0_7_1.consultation: '100'
-                            - ./dhp-0_7_1.phr_handling_fees: '10'
-                            - ./ind-gstin.cgst: '5'
-                            - ./ind-gstin.sgst: '5'
+                            - consultation: '100'
+                            - phr_handling_fees: '10'
+                            - cgst: '5'
+                            - sgst: '5'
                       payment:
                         uri: payto://ban/98273982749428?amount=INR:110&ifsc=SBIN0000575&message=hello
                         type: ON-ORDER
@@ -1372,19 +1372,19 @@ paths:
                             start: T10:15Z
                             end: T10:30Z
                         customer:
-                          ./nha.health_id: 61-8787-9274-4422
-                          ./nha.phr_address: example@ndhm
+                          health_id: 61-8787-9274-4422
+                          phr_address: example@ndhm
                         tags:
-                          ./dhp-0_7_1.teleconf_url: https://us06web.zoom.us/j/82071160538
+                          teleconf_url: https://us06web.zoom.us/j/82071160538
                       quote:
                         price:
                           currency: INR
                           value: '120'
                           breakup:
-                            - ./dhp-0_7_1.consultation: '100'
-                            - ./dhp-0_7_1.phr_handling_fees: '10'
-                            - ./ind-gstin.cgst: '5'
-                            - ./ind-gstin.sgst: '5'
+                            - consultation: '100'
+                            - phr_handling_fees: '10'
+                            - cgst: '5'
+                            - sgst: '5'
                       payment:
                         uri: payto://ban/98273982749428?amount=INR:110&ifsc=SBIN0000575&message=hello
                         type: ON-ORDER
@@ -1441,19 +1441,19 @@ paths:
                             start: T10:15Z
                             end: T10:30Z
                         customer:
-                          ./nha.health_id: 61-8787-9274-4422
-                          ./nha.phr_address: example@ndhm
+                          health_id: 61-8787-9274-4422
+                          phr_address: example@ndhm
                         tags:
-                          ./dhp-0_7_1.teleconf_url: https://us06web.zoom.us/j/82071160538
+                          teleconf_url: https://us06web.zoom.us/j/82071160538
                       quote:
                         price:
                           currency: INR
                           value: '120'
                           breakup:
-                            - ./dhp-0_7_1.consultation: '100'
-                            - ./dhp-0_7_1.phr_handling_fees: '10'
-                            - ./ind-gstin.cgst: '5'
-                            - ./ind-gstin.sgst: '5'
+                            - consultation: '100'
+                            - phr_handling_fees: '10'
+                            - cgst: '5'
+                            - sgst: '5'
                       payment:
                         uri: payto://ban/98273982749428?amount=INR:110&ifsc=SBIN0000575&message=hello
                         type: ON-ORDER
@@ -1633,43 +1633,50 @@ components:
           $ref: '#/components/schemas/City/properties/code'
         action:
           type: string
-          description: Defines the DHP API call. Any actions other than the enumerated actions are not supported by DHP Protocol
+          description: Describes a specific order-lifecycle interaction that occurs between a BAP and a BPP. 
           enum:
             - search
             - select
             - init
             - confirm
             - status
+            - update
+            - track
+            - cancel
+            - rating
+            - support
             - on_search
             - on_select
             - on_init
             - on_confirm
             - on_status
+            - on_update
+            - on_track
+            - on_cancel
+            - on_rating
+            - on_support
+            - ack
         core_version:
           type: string
           description: Version of DHP core API specification being used
-        consumer_id:
+        bap_id:
           type: string
-          format: uri
-          description: Unique id of the Consumer. By default it is the fully qualified domain name of the Consumer
-        consumer_uri:
+          description: Unique Identifier of the BAP on a DHP-enabled network. Typically its the FQDN of the BAP
+        bap_uri:
           type: string
-          format: uri
-          description: URI of the Consumer for accepting callbacks. Must have the same domain name as the consumer_id
-        provider_id:
+          description: URI of the BAP for accepting callbacks. Must have the same domain name as the bap_id. HTTPS recommended for public networks
+        bpp_id:
           type: string
-          format: uri
           description: Unique id of the Provider. By default it is the fully qualified domain name of the Provider
-        provider_uri:
+        bpp_uri:
           type: string
-          format: uri
           description: URI of the Provider. Must have the same domain name as the provider_id
         transaction_id:
           type: string
-          description: This is a unique value which persists across all API calls from search through confirm
+          description: Created by the BAP when calling the confirm API call. This is the network-level identifier of a confirmed order. All calls referring to a confirmed order must contain this value. Calls not referring to a confirmed order do not need to send transaction_id.  
         message_id:
           type: string
-          description: This is a unique value which persists during a request / callback cycle
+          description: UUID to map a request to a callback. Generated by the initiator of a request-callback cycle. It is used to match ansynchronous requests to callbacks. It is also used when unsolicited callback APIs are called. 
         timestamp:
           type: string
           format: date-time
@@ -1680,17 +1687,6 @@ components:
         ttl:
           type: string
           description: The duration in ISO8601 format after timestamp for which this message holds valid
-      required:
-        - domain
-        - action
-        - country
-        - city
-        - core_version
-        - transaction_id
-        - message_id
-        - consumer_id
-        - consumer_uri
-        - timestamp
     Country:
       description: Describes a country.
       type: object
@@ -1783,10 +1779,8 @@ components:
               $ref: '#/components/schemas/Person'
             contact:
               $ref: '#/components/schemas/Contact'
-        person:
+        agent:
           $ref: '#/components/schemas/Agent'
-        person:
-          $ref: '#/components/schemas/Person'
         contact:
           $ref: '#/components/schemas/Contcat'
         start:
