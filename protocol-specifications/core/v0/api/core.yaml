@@ -1782,7 +1782,7 @@ components:
         agent:
           $ref: '#/components/schemas/Agent'
         contact:
-          $ref: '#/components/schemas/Contcat'
+          $ref: '#/components/schemas/Contact'
         start:
           description: Details on the start of fulfillment
           type: object
@@ -2006,7 +2006,7 @@ components:
             - currency
         type:
           type: string
-          descriptor: Stage at which the payment is expected
+          description: Stage at which the payment is expected
           enum:
             - ON-ORDER
             - PRE-FULFILLMENT
